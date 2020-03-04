@@ -1,6 +1,6 @@
 <?php
 
-define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri().'-first' . '/inc/' );
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri().'-third' . '/inc/' );
 require_once dirname( __FILE__ ) . '/inc/options-framework.php';
 
 // Loads options.php from child or parent theme
