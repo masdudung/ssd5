@@ -1,5 +1,5 @@
 <?php
-$option = get_option('lalapo', array());
+$option = get_option('second-child', array());
 set_query_var( 'option', $option);
 
 get_header();

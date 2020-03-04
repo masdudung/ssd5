@@ -10,7 +10,7 @@
 
 function optionsframework_option_name() {
 
-	return 'second-child';
+	return 'third-child';
 }
 
 /**
@@ -26,18 +26,12 @@ function optionsframework_options() {
         "id" => "blog_logo",
         "type" => "upload" );
     
-    $options['show_sidebar'] = array(
+    $options['show_maintenance'] = array(
         "name" => "Show Sidebar",
-        "desc" => "show sidebar in front page",
-        "id" => "show_sidebar",
-        "std" => "1",
+        "desc" => "show maintenance page",
+        "id" => "show_maintenance",
+        "std" => "0",
         "type" => "checkbox" );
-
-    $options['post_limit'] = array(
-        "name" => "Post Limit",
-        "id" => "post_limit",
-        "std" => "5",
-        "type" => "text" );
     $options[] = array();
     $options[] = array();
 
