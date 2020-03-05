@@ -12,7 +12,7 @@ class masdudung_third
     function __construct()
     {
         add_action( 'wp_enqueue_scripts', [$this, 'my_theme_enqueue_styles'] );
-        add_action( 'get_header', [$this, 'wp_maintenance_mode'] );   
+        add_action( 'wp', [$this, 'wp_maintenance_mode'] );   
     }
 
     function my_theme_enqueue_styles() 
