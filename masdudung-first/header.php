@@ -24,11 +24,10 @@
         </nav>
         <br>
         <?php
-        if(array_key_exists('blog_logo', $option))
+        $blog_logo = of_get_option('blog_logo', null);
+        if($blog_logo)
         {
-        ?>
-            <img width="100px" src="<?php echo $option['blog_logo'] ?>" alt="">
-        <?php    
+            echo "<img width='100px' src='$blog_logo' alt=''>";   
         }
         ?>
         <hr>

@@ -2,7 +2,8 @@
 <?php
 
 global $wp_query;
-$post_limit = $option['post_limit'];
+$post_limit = of_get_option('post_limit', 5);
+
 $args = array_merge( $wp_query->query_vars, ['posts_per_page' => $post_limit ] );
 query_posts( $args );
 

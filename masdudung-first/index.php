@@ -1,7 +1,4 @@
 <?php
-$option = get_option('first-child', array());
-set_query_var( 'option', $option);
-
 get_header();
 
 

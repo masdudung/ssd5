@@ -14,19 +14,19 @@
     </p>
     <p>
     <?php
-    $option = get_option('first-child', array());
-    if(array_key_exists('blog_description', $option))
+    $blog_description = of_get_option('blog_description', null);
+    if($blog_description)
     {
-        echo $option['blog_description'];
+        echo $blog_description;
     }
     ?>
     </p>
     <p>
     <?php
-    $option = get_option('first-child', array());
-    if(array_key_exists('footer_copyright', $option))
+    $footer_copyright = of_get_option('footer_copyright', null);
+    if($footer_copyright)
     {
-        echo $option['footer_copyright'];
+        echo $footer_copyright;
     }
     ?>
     </p>
