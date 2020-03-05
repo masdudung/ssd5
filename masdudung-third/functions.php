@@ -22,15 +22,12 @@ class masdudung_third
 
     function wp_maintenance_mode() 
     {
-        $option = get_option('third-child', array());
-        if( array_key_exists( 'show_maintenance', $option ) )
+        $show_maintenance = of_get_option('show_maintenance', 0);
+        if( $show_maintenance == 1 )
         {
-            if( $option['show_maintenance']==1 )
-            {
-                if (!current_user_can('edit_themes') || !is_user_logged_in()) {
-                    wp_die('<h1>Under Maintenance</h1><br />Website under planned maintenance. Please check back later.');
-                }     
-            }
+            if (!current_user_can('edit_themes') || !is_user_logged_in()) {
+                wp_die('<h1>Under Maintenance</h1><br />Website under planned maintenance. Please check back later.');
+            }     
         }
     }
 }
